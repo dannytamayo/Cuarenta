@@ -1,12 +1,13 @@
-import React from 'react';
-import Prueba from './componentes/Prueba';
-
+import { ChakraProvider } from "@chakra-ui/react";
+import React from "react";
+import Login from "./containers/Login";
 function App() {
   return (
-    <div>
-      <h1>Hola mundo</h1>
-      <Prueba/>
-    </div>
+    <ChakraProvider>
+      <div>
+        <Login />
+      </div>
+    </ChakraProvider>
   );
 }
 
