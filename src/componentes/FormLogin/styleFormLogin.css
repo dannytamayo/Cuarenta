@@ -1,0 +1,12 @@
+.centerImage{
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.marginBottomButtons{
+
+    margin: 3rem 13rem;
+
+}

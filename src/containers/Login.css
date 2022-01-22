@@ -1,14 +1,43 @@
-body{
-
-    background-color: #5B8266 !important;
-
+body {
+  background-color: #333030 !important;
 }
 
-.styleContainer{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.styleContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.title-gradient {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  padding-top: 4rem;
+  font-size: 5rem;
+  font-weight: bold;
+  color: transparent;
+  background-image: linear-gradient(
+    to left,
+    #ffd700,
+    #7b68ee,
+    #3498db,
+    #2ecc71,
+    #ffd700
+  );
+  background-clip: text;
+  animation: color 1.5s linear infinite;
+  background-size: 500%;
+}
+
+@keyframes color {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 100% 50%;
+  }
 }

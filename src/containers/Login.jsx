@@ -1,12 +1,16 @@
-import React from "react";
-import FormLogin from "../componentes/FormLogin";
+import { React, Fragment } from "react";
+import FormLogin from "../componentes/FormLogin/FormLogin";
 import "./Login.css";
 
 const Login = () => {
   return (
-    <div className="styleContainer">
-      <FormLogin />
-    </div>
+    <Fragment>
+      <div className="title-gradient ">JUEGA YA!</div>
+
+      <div className="styleContainer">
+        <FormLogin />
+      </div>
+    </Fragment>
   );
 };
 
